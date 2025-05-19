@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto .info {
+    margin-bottom: 10px;
+}
+
+.produto .nome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.produto .preco {
+    color: green;
+}
+
+.produto .acao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.produto .acao label {
+    font-size: 0.9em;
+}
+
+.produto .acao input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.produto .acao button.adicionar {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.produto .acao button.adicionar:hover {
+    background-color: #4cae4c;
+}
+
+.pedido-container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.pedido-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#pedido-lista {
+    list-style: none;
+    padding: 0;
+}
+
+#pedido-lista li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#pedido-lista li:last-child {
+    border-bottom: none;
+}
+
+.pedido-container .total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    color: #333;
+}
+
+.entrega-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.entrega-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.entrega-info label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.entrega-info input[type="text"],
+.entrega-info select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#finalizar-pedido {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#finalizar-pedido:hover {
+    background-color: #0056b3;
+}
